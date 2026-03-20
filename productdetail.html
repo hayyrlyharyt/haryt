@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html lang="tk"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#04ae6a",
+              "background-light": "#f5f8f7",
+              "background-dark": "#0f231b",
+            },
+            fontFamily: {
+              "display": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<title>Simsiz Nauşnik - Product Detail</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 transition-colors duration-300">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 px-6 py-3 lg:px-40 bg-white dark:bg-background-dark/50 backdrop-blur-md sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-2 flex-shrink-0">
+<div class="bg-primary text-white p-1.5 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">shopping_basket</span>
+</div>
+<h1 class="text-2xl font-black tracking-tight text-primary">HayyrHaryt</h1>
+</div>
+</div>
+<div class="flex flex-1 justify-end gap-4 lg:gap-8">
+<label class="hidden sm:flex flex-col min-w-40 h-10 max-w-64 flex-1">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full bg-primary/5 dark:bg-primary/10 border border-primary/10">
+<div class="text-primary flex items-center justify-center pl-4">
+<span class="material-symbols-outlined text-xl">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 border-none bg-transparent focus:outline-0 focus:ring-0 placeholder:text-primary/60 px-4 pl-2 text-base font-normal" placeholder="Gözleg" value=""/>
+</div>
+</label>
+<div class="flex gap-2">
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</header>
+<main class="mx-auto max-w-[1280px] w-full px-4 lg:px-10 py-6">
+<!-- Breadcrumbs -->
+<nav class="flex flex-wrap gap-2 mb-8 text-sm">
+<a class="text-primary font-medium hover:underline" href="#">Baş sahypa</a>
+<span class="text-slate-400 font-medium">/</span>
+<a class="text-primary font-medium hover:underline" href="#">Elektronika</a>
+<span class="text-slate-400 font-medium">/</span>
+<span class="text-slate-500 dark:text-slate-400 font-medium">Nauşniklar</span>
+</nav>
+<!-- Product Section -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+<!-- Image Gallery -->
+<div class="space-y-4">
+<div class="aspect-square w-full rounded-2xl overflow-hidden bg-white dark:bg-slate-800 shadow-sm border border-primary/5">
+<img alt="Simsiz Nauşnik" class="w-full h-full object-cover" data-alt="Premium wireless black headphones professional studio quality" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbMx_3vErjN26rfMImfFbiNzc-z8D0la-iXI0gSDQiNsU1SlnVy-Im4xsJNM9k3ZZt7S4VF_8Fwbt9iK0Bp1SIjAyDr-U1Tyf0PasThZHwaaKtNtr5dpjng2hN5lGvDRiXLHiTVGtZslU5_oL361WUKIp00Y6vbvy7UqOq_Fz1M1Ha3gjWIuLxz7OptJVc7AnF3ZG_Uw0mEgTXxr8oABta2AaeVF415TEYCrqxQ21JXaS6r2YwTWohcbZdbs9FTw6ipasDWj2xLhxc"/>
+</div>
+<div class="grid grid-cols-4 gap-4">
+<div class="aspect-square rounded-xl overflow-hidden border-2 border-primary cursor-pointer">
+<img class="w-full h-full object-cover" data-alt="Close up of headphone earcups" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf0HWAokeXwfNb0H-cS2Uwbw0MuhwxkTa2IXSBSBJk8TA3yYFtlKQEWXtOZkIFgoa4i9qTfOoRIAq9KvHJVQFcq40HepxpMihEH-DrG0ruRZFM0bzGnDYkSiVOvR6XU7lv3vGuk75GcVyH1jvIbxSQ96UlzYd_UpKbkNbfTn9m6lqLveB16x8nkoiAdxXuA9GCQbaeE0DZL-i1YWkjM39vC9wFytPpBPdi_y8COho7Vq3LNwnvv5l_nMPoLdR-FuXZ0PTVHT2Oekiw"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden border border-transparent hover:border-primary/50 cursor-pointer bg-white dark:bg-slate-800">
+<img class="w-full h-full object-cover" data-alt="Headphones from a side profile view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAecCUKrhpoIxoIc7vqbXQq7LH4HMM5sudGaE_3i7n0jOus8lmiDaPhmV033-JcAnE3kGLQyfkwTCb3IlNlcCulU7IhxK85IQouwfBKRf71RvBixXi-MKqFewPI23X1y40h_S91yBR9BsumyQeNKutHIFwlRcw_g_ym1RktN0TbiJMtqww8cxfstIZ5XCX_W6FTVBhhq7zcyzDbGRr48RYxwgTt2F4_OamgXoDAmsEMI1KICZMRTh6s7SM6E1afSJJhRTLZ7pIU2HuG"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden border border-transparent hover:border-primary/50 cursor-pointer bg-white dark:bg-slate-800">
+<img class="w-full h-full object-cover" data-alt="Headphones lying on a wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMbkQ6q5nhiBBS7zH7-9ZqgQdcxwwerPmzjzDScYiDrvdh0l3h-258m5_7St76MQgJ3prf6A8td7KvgVxeAHYdwb0nvowPCTjHfxqD1jiSt3YZ3g9jlyjzWWNZhr7TUcTBwK6hhsARWEtrp9xA8xReQEsXzsYEmowclII9dCclArFjsfTaSIQjPIOhREBpUJ0b4xlhNKsx7M_GxZKcV1P1iakTawuCMYBgHcT74DeI_w7KZrzfM4RsAKNuW-Giurp8nPJ8WQ5tA8h-"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden border border-transparent hover:border-primary/50 cursor-pointer bg-white dark:bg-slate-800">
+<img class="w-full h-full object-cover" data-alt="Person wearing headphones in a lifestyle shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuB4r1IQ6VhVAraVmvvTjQMwZNgSOznD0Jqy-Jo-lFkqq-TwoD2n2Mu12lgAcQHiPyql4IeOHZZ54p1e-rSIezfz29NLKzdLYgf-aLWaX7dnmBVqziIYrs4-WFBhck69rFltUFvt8avB4qW7VLiyzHoZbJR_vAaxjczgsSk9zUOF9n5np8-Rj_mbhIUK5y6L4c1gGwwiQ8_DJWyx2ISv2AU4bySviVCbqzh3SnMDeubqgIf4a072HXRcyV_uQPv_q_PWq1pUtOdhta"/>
+</div>
+</div>
+</div>
+<!-- Details Section -->
+<div class="flex flex-col">
+<div class="mb-6">
+<span class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-2">Täze model</span>
+<h1 class="text-4xl lg:text-5xl font-black text-slate-900 dark:text-slate-100 leading-tight mb-2">Simsiz Nauşnik</h1>
+<div class="flex items-center gap-4 mb-4">
+<span class="text-sm font-medium text-primary">Ätiýaçda bar</span>
+</div>
+<p class="text-3xl font-bold text-slate-900 dark:text-slate-100">850 TMT</p>
+</div>
+<div class="prose prose-slate dark:prose-invert max-w-none mb-8">
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Simsiz nauşniklar size ýokary hilli ses we çäksiz azatlygy hödürleýär. Häzirki zaman dizaýny we amatlylygy bilen, islendik ýerde aýdym diňlemekden ýa-da jaňlara jogap bermekden lezzet alyň. Güýçli ses izolýasiýasy we uzak ömürli batareýasy bilen günüňizi has gyzykly geçiriň.
+                            </p>
+</div>
+<div class="mb-8 bg-primary/5 dark:bg-primary/5 p-6 rounded-2xl border border-primary/10">
+<h3 class="font-bold text-slate-900 dark:text-slate-100 mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">settings</span>
+                                Tehniki aýratynlyklary
+                            </h3>
+<ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-6">
+<li class="flex items-center justify-between py-1 border-b border-primary/5">
+<span class="text-slate-500 text-sm">Bluetooth</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold text-sm text-right">5.3 Wersiýa</span>
+</li>
+<li class="flex items-center justify-between py-1 border-b border-primary/5">
+<span class="text-slate-500 text-sm">Batareýa ömri</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold text-sm text-right">40 sagat</span>
+</li>
+<li class="flex items-center justify-between py-1 border-b border-primary/5">
+<span class="text-slate-500 text-sm">Zarýad beriş</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold text-sm text-right">USB Type-C</span>
+</li>
+<li class="flex items-center justify-between py-1 border-b border-primary/5">
+<span class="text-slate-500 text-sm">Agramy</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold text-sm text-right">250 gr</span>
+</li>
+<li class="flex items-center justify-between py-1 border-b border-primary/5">
+<span class="text-slate-500 text-sm">Işleýiş aralygy</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold text-sm text-right">15 metr</span>
+</li>
+<li class="flex items-center justify-between py-1 border-b border-primary/5">
+<span class="text-slate-500 text-sm">Suw garşylygy</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold text-sm text-right">IPX5</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 mt-auto">
+<button class="flex-1 flex items-center justify-center gap-3 bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-xl transition-all shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined">chat</span>
+                                WhatsApp arkaly sargyt et
+                            </button>
+</div>
+</div>
+</div>
+<!-- Related Products Section -->
+<section class="mb-16 border-t border-primary/10 pt-16">
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100">Meňzeş harytlar</h2>
+<a class="text-primary font-bold text-sm flex items-center gap-1 hover:underline" href="#">
+                            Ählisini gör
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden bg-white dark:bg-slate-800 mb-4 border border-primary/5 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Compact white wireless earbuds with charging case" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtTjPT3WWmVYKJoo56SLHa3hQxsBWePzTrA4TOagrT8n_5n6pftETOc3cxRVWSz8YF2qbfeSDdSAlQnddN7L6LodJYR7Ax0wvhFDgrxitLag6fbBQ1Bp80HDXIg3161SUN0Ljfu-hPsoWeZsWsE4-4MixrVRnE0YTZADBM_94101L062FcYqVTrZTZQ9Lw4Vio7jtDbB21463GNji-iDuys87-OSqr5VzLTDKm5gyANETtldO7xVfHI-8Xazh89dNLgxNdzBVts69n"/>
+<button class="absolute bottom-4 right-4 h-10 w-10 bg-white/90 dark:bg-slate-900/90 backdrop-blur rounded-full flex items-center justify-center text-primary shadow-lg opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+<h3 class="font-bold text-slate-900 dark:text-slate-100 group-hover:text-primary transition-colors">TWS Earbuds Mini</h3>
+<p class="text-primary font-bold">450 TMT</p>
+</div>
+<!-- Card 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden bg-white dark:bg-slate-800 mb-4 border border-primary/5 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sleek silver noise cancelling headphones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-OFqv2Y6rGD3HrzAcdDrQyhxDw9OK-o3cVsZsieOu8hhQIEN5BY__W1AMkhxBQgTUhqLwXAfSGnjJcp6E5V4Hpu2lBvHjH-3j4FjaZI_NWJjd52l2lfyM-q2Y0ZAAUbqMiQPh5A5YLKwH6i3p3G7mMTNY8c-I3_G5irItnDTGgvy091outX21PS6u3cO_IZnTwAaiTLVa6mr0VD-pEA5G6TcV8wCZAWlEGX-59X23uorH5kp1Fu0_OBT5jANGpCSAIOROJVStxNCq"/>
+<button class="absolute bottom-4 right-4 h-10 w-10 bg-white/90 dark:bg-slate-900/90 backdrop-blur rounded-full flex items-center justify-center text-primary shadow-lg opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+<h3 class="font-bold text-slate-900 dark:text-slate-100 group-hover:text-primary transition-colors">Pro Noise Cancel</h3>
+<p class="text-primary font-bold">1200 TMT</p>
+</div>
+<!-- Card 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden bg-white dark:bg-slate-800 mb-4 border border-primary/5 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Blue wireless headphones overhead design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsHB-WBy_j-ru-CL-9vh_FaSLxZTjhNFJ9NGZMAk09dKV0W1t28U95APtsXpcaCoVX28fNp9K6LKjdFE9wEt8-1BKgBCDQFzn5MMjjan1_JCoN8WE5ksM7Q_1Qp9kEsTs-oz88_iye1b4P4m1JFEYlyXrpFhLsKnRo0qtY8QeRKUzUC2ljxf6NnANiNAvzAgWmrZKxbkLrjaoqk4s6Lf1q9BSUAYUSF35I_GHGizwzGRCr2rOwKfNnlhuZetEFc22jE4iV9ufCjy9C"/>
+<button class="absolute bottom-4 right-4 h-10 w-10 bg-white/90 dark:bg-slate-900/90 backdrop-blur rounded-full flex items-center justify-center text-primary shadow-lg opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+<h3 class="font-bold text-slate-900 dark:text-slate-100 group-hover:text-primary transition-colors">Sport Wireless V2</h3>
+<p class="text-primary font-bold">600 TMT</p>
+</div>
+<!-- Card 4 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden bg-white dark:bg-slate-800 mb-4 border border-primary/5 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Professional studio monitors black finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEEIry0g1hREjEL6SsXzru4WKmo_8DXHMtA1CNmbGrLLih47eXBAGx90QtMmUI_G_djhw1lLX1nmZTBqRMYQKXIFUb_XEe3T5Yw3p5S6N00ItQ5cRK0XFBaU_rZNHeQQmkoBVm2EA-sBmx8_g2sZQDjFXKQuAdnUhnVo-fnIxdG5WwBeiLTQZ6krdEslVSHDLrWixUrCZbp5adSEaSmHCAdlgI6OEbBHC1Om6F9Uzo3sZQRQ5wopO47GheT6qE4XNxrpzAjZnggihv"/>
+<button class="absolute bottom-4 right-4 h-10 w-10 bg-white/90 dark:bg-slate-900/90 backdrop-blur rounded-full flex items-center justify-center text-primary shadow-lg opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+<h3 class="font-bold text-slate-900 dark:text-slate-100 group-hover:text-primary transition-colors">Studio Master Elite</h3>
+<p class="text-primary font-bold">1850 TMT</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Section -->
+<footer class="mt-auto bg-white dark:bg-background-dark/80 border-t border-primary/10 py-12 px-6 lg:px-40">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-[1280px] mx-auto">
+<div>
+<div class="flex items-center gap-2 mb-6">
+<div class="bg-primary text-white p-1.5 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">shopping_basket</span>
+</div>
+<h1 class="text-2xl font-black tracking-tight text-primary">HayyrHaryt</h1>
+</div>
+<p class="text-slate-500 text-sm leading-relaxed">Türkmenistanyň iň uly onlaýn söwda platformalarynyň biri. Siziň sargytlaryňyzy çalt we ygtybarly eltip berýäris.</p>
+</div>
+<div>
+<h4 class="font-bold mb-6">Kategoriýalar</h4>
+<ul class="space-y-3 text-sm text-slate-500">
+<li><a class="hover:text-primary" href="#">Gulaçyn nauşniklar</a></li>
+<li><a class="hover:text-primary" href="#">TWS nauşniklar</a></li>
+<li><a class="hover:text-primary" href="#">Oýun nauşniklary</a></li>
+<li><a class="hover:text-primary" href="#">Aksesuarlaer</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Habarlaşmak</h4>
+<ul class="space-y-4 text-sm text-slate-500"><li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl">location_on</span>
+<span>Aşgabat ş., 10 ýyl Abadançylyk köç., 45-nji jaý</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">call</span>
+<span>+993 12 123456</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">mail</span>
+<span>info@hayyrharyt.tm</span>
+</li></ul>
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-primary/5 text-center text-sm text-slate-400">© 2024 HayyrHaryt. Ähli hukuklar goralan.</div>
+</footer>
+</div>
+</div>
+</body></html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="tk">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,7 +19,7 @@
           },
           colors: {
             brand: {
-              50:  '#ecfdf5',
+              50: '#ecfdf5',
               100: '#d1fae5',
               200: '#a7f3d0',
               300: '#6ee7b7',
@@ -36,21 +37,25 @@
   </script>
   <style>
     /* Smooth scroll */
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     /* Card hover lift */
     .product-card {
-      transition: transform 0.3s cubic-bezier(.4,0,.2,1), box-shadow 0.3s cubic-bezier(.4,0,.2,1);
+      transition: transform 0.3s cubic-bezier(.4, 0, .2, 1), box-shadow 0.3s cubic-bezier(.4, 0, .2, 1);
     }
+
     .product-card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
     }
 
     /* Image zoom on hover */
     .product-card .img-wrap img {
-      transition: transform 0.5s cubic-bezier(.4,0,.2,1);
+      transition: transform 0.5s cubic-bezier(.4, 0, .2, 1);
     }
+
     .product-card:hover .img-wrap img {
       transform: scale(1.08);
     }
@@ -59,15 +64,24 @@
     .btn-whatsapp {
       transition: all 0.25s ease;
     }
+
     .btn-whatsapp:hover {
-      box-shadow: 0 0 0 4px rgba(16,185,129,0.25);
+      box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.25);
     }
 
     /* Fade-in animation */
     @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to   { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
+
     .animate-fade-in-up {
       animation: fadeInUp 0.6s ease-out forwards;
       opacity: 0;
@@ -79,25 +93,47 @@
       background-size: 200% 200%;
       animation: gradientShift 8s ease infinite;
     }
+
     @keyframes gradientShift {
-      0%   { background-position: 0% 50%; }
-      50%  { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
     }
 
     /* Search input focus ring */
     #searchInput:focus {
       outline: none;
-      box-shadow: 0 0 0 3px rgba(16,185,129,0.3);
+      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.3);
     }
 
     /* Scrollbar styling */
-    ::-webkit-scrollbar { width: 8px; }
-    ::-webkit-scrollbar-track { background: #f1f5f9; }
-    ::-webkit-scrollbar-thumb { background: #10b981; border-radius: 4px; }
-    ::-webkit-scrollbar-thumb:hover { background: #059669; }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #10b981;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #059669;
+    }
   </style>
 </head>
+
 <body class="bg-white font-sans text-gray-800 antialiased">
 
   <!-- ═══════════════════════════════════════════════════════
@@ -108,9 +144,11 @@
       <div class="flex items-center justify-between h-16 sm:h-20">
         <!-- Logo -->
         <a href="#" class="flex items-center gap-2 group">
-          <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-brand-500 flex items-center justify-center shadow-lg shadow-brand-500/30 group-hover:shadow-brand-500/50 transition-shadow">
-            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+          <div
+            class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-brand-500 flex items-center justify-center shadow-lg shadow-brand-500/30 group-hover:shadow-brand-500/50 transition-shadow">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
             </svg>
           </div>
           <span class="text-xl sm:text-2xl font-extrabold tracking-tight text-gray-900">
@@ -120,15 +158,13 @@
 
         <!-- Search -->
         <div class="relative w-44 sm:w-72 lg:w-96">
-          <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+          <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor"
+            stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.3-4.3" />
           </svg>
-          <input
-            id="searchInput"
-            type="text"
-            placeholder="Haryt gözle..."
-            class="w-full pl-10 pr-4 py-2.5 rounded-xl bg-gray-50 border border-gray-200 text-sm placeholder:text-gray-400 focus:border-brand-400 transition-all"
-          />
+          <input id="searchInput" type="text" placeholder="Haryt gözle..."
+            class="w-full pl-10 pr-4 py-2.5 rounded-xl bg-gray-50 border border-gray-200 text-sm placeholder:text-gray-400 focus:border-brand-400 transition-all" />
         </div>
       </div>
     </div>
@@ -140,7 +176,8 @@
   <section class="hero-gradient relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32 relative z-10">
       <div class="max-w-2xl">
-        <span class="inline-block px-4 py-1.5 rounded-full bg-white/60 backdrop-blur text-brand-700 text-xs font-semibold tracking-wide uppercase mb-6">
+        <span
+          class="inline-block px-4 py-1.5 rounded-full bg-white/60 backdrop-blur text-brand-700 text-xs font-semibold tracking-wide uppercase mb-6">
           🛒 Täze harytlar geldi!
         </span>
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
@@ -150,9 +187,12 @@
         <p class="mt-6 text-lg sm:text-xl text-gray-600 leading-relaxed max-w-lg">
           Hil we amatly baha bir ýerde. Islän harytyňyzy saýlaň, WhatsApp arkaly aňsatlyk bilen sargyt ediň!
         </p>
-        <a href="#products" class="inline-flex items-center gap-2 mt-8 px-8 py-3.5 rounded-xl bg-brand-500 text-white font-semibold text-base hover:bg-brand-600 shadow-lg shadow-brand-500/30 hover:shadow-brand-500/50 transition-all">
+        <a href="#products"
+          class="inline-flex items-center gap-2 mt-8 px-8 py-3.5 rounded-xl bg-brand-500 text-white font-semibold text-base hover:bg-brand-600 shadow-lg shadow-brand-500/30 hover:shadow-brand-500/50 transition-all">
           Harytlary görmek
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
         </a>
       </div>
     </div>
@@ -178,8 +218,10 @@
 
     <!-- No Results -->
     <div id="noResults" class="hidden text-center py-20">
-      <svg class="w-16 h-16 mx-auto text-gray-300 mb-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/>
+      <svg class="w-16 h-16 mx-auto text-gray-300 mb-4" fill="none" stroke="currentColor" stroke-width="1.5"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
       </svg>
       <p class="text-gray-400 text-lg font-medium">Haryt tapylmady</p>
       <p class="text-gray-400 text-sm mt-1">Başga söz bilen gözläň</p>
@@ -244,6 +286,13 @@
         price: 550,
         description: "360° ses, 12 sagat batareýa. Syýahat üçin ykjam ölçeg.",
         image: "images/speaker.png",
+      },
+      {
+        id: 7,
+        name: "Induksion piltolet paýalnik",
+        price: 200,
+        description: "Impulsly paýalnik-pistolet FL:IR:G2 (100W).",
+        image: "images/solderinggun.png",
       },
     ];
 
@@ -339,4 +388,5 @@
     renderProducts(products);
   </script>
 </body>
+
 </html>
